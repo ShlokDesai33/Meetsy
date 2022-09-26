@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185EBFE228CD286D007AE1B8 /* Social+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFE028CD286D007AE1B8 /* Social+CoreDataClass.swift */; };
+		185EBFE328CD286D007AE1B8 /* Social+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFE128CD286D007AE1B8 /* Social+CoreDataProperties.swift */; };
+		185EBFE628CD34D8007AE1B8 /* AddMoreCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185EBFE528CD34D8007AE1B8 /* AddMoreCollectionCell.xib */; };
+		185EBFE828CD34E6007AE1B8 /* AddMoreCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFE728CD34E6007AE1B8 /* AddMoreCollectionCell.swift */; };
+		185EBFEB28D1533F007AE1B8 /* AllSocialsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFEA28D1533F007AE1B8 /* AllSocialsPageController.swift */; };
+		185EBFED28D1542F007AE1B8 /* AllSocialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFEC28D1542F007AE1B8 /* AllSocialsCell.swift */; };
+		188E276528AA2A6F0051CDD3 /* AuthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188E276428AA2A6F0051CDD3 /* AuthStoryboard.storyboard */; };
+		188E276828AA2B9E0051CDD3 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E276728AA2B9E0051CDD3 /* AuthController.swift */; };
+		18B86A6628AE3C5900A59F11 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A6528AE3C5900A59F11 /* GradientButton.swift */; };
+		18B86A6A28AFF90400A59F11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A6928AFF90400A59F11 /* HomeViewController.swift */; };
+		18B86A7528B6309E00A59F11 /* SocialMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A7428B6309E00A59F11 /* SocialMediaCell.swift */; };
+		18B86A7728B630D200A59F11 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A7628B630D200A59F11 /* ProfilePictureView.swift */; };
+		18B86A7928B6311B00A59F11 /* SocialMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B86A7828B6311B00A59F11 /* SocialMediaCell.xib */; };
+		18B86A7B28C96B0600A59F11 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B86A7A28C96B0600A59F11 /* ProfilePage.storyboard */; };
+		18B86A8528C96D7A00A59F11 /* SocialMediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8428C96D7A00A59F11 /* SocialMediaList.swift */; };
+		18B86A8728CBF91800A59F11 /* ScanCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8628CBF91800A59F11 /* ScanCodeController.swift */; };
+		18B86A8928CBF91B00A59F11 /* EditUsernameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8828CBF91B00A59F11 /* EditUsernameController.swift */; };
+		18B86A8B28CBF91E00A59F11 /* ProfilePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8A28CBF91E00A59F11 /* ProfilePageController.swift */; };
+		18B86A8D28CBF96800A59F11 /* EditUsernameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8C28CBF96800A59F11 /* EditUsernameTableCell.swift */; };
+		18B86A8F28CC058800A59F11 /* YourLinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8E28CC058800A59F11 /* YourLinksController.swift */; };
+		18B86A9128CC059600A59F11 /* YourLinksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A9028CC059600A59F11 /* YourLinksTableCell.swift */; };
+		18B86A9328CC059F00A59F11 /* yourLinksTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B86A9228CC059F00A59F11 /* yourLinksTableCell.xib */; };
+		EF61BCFD28ABA4AF0023EFB0 /* ProvidersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61BCFC28ABA4AF0023EFB0 /* ProvidersController.swift */; };
+		EF682C4A28B378B30030CB41 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EF682C4928B378B30030CB41 /* GoogleSignIn */; };
+		EFDD1CE428AA1D0D00AD44CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1CE328AA1D0D00AD44CD /* AppDelegate.swift */; };
+		EFDD1CE628AA1D0D00AD44CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1CE528AA1D0D00AD44CD /* SceneDelegate.swift */; };
+		EFDD1CEB28AA1D0D00AD44CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD1CE928AA1D0D00AD44CD /* Main.storyboard */; };
+		EFDD1CEE28AA1D0D00AD44CD /* Meetsy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1CEC28AA1D0D00AD44CD /* Meetsy.xcdatamodeld */; };
+		EFDD1CF028AA1D1100AD44CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD1CEF28AA1D1100AD44CD /* Assets.xcassets */; };
+		EFDD1CF328AA1D1100AD44CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD1CF128AA1D1100AD44CD /* LaunchScreen.storyboard */; };
+		EFDD1CFE28AA1D1100AD44CD /* MeetsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1CFD28AA1D1100AD44CD /* MeetsyTests.swift */; };
+		EFDD1D0828AA1D1100AD44CD /* MeetsyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1D0728AA1D1100AD44CD /* MeetsyUITests.swift */; };
+		EFDD1D0A28AA1D1100AD44CD /* MeetsyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1D0928AA1D1100AD44CD /* MeetsyUITestsLaunchTests.swift */; };
+		EFDD1D1728AA20C700AD44CD /* UDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1D1628AA20C700AD44CD /* UDM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFDD1CFA28AA1D1100AD44CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDD1CD828AA1D0D00AD44CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDD1CDF28AA1D0D00AD44CD;
+			remoteInfo = Meetsy;
+		};
+		EFDD1D0428AA1D1100AD44CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDD1CD828AA1D0D00AD44CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDD1CDF28AA1D0D00AD44CD;
+			remoteInfo = Meetsy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		185EBFE028CD286D007AE1B8 /* Social+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Social+CoreDataClass.swift"; sourceTree = "<group>"; };
+		185EBFE128CD286D007AE1B8 /* Social+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Social+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		185EBFE528CD34D8007AE1B8 /* AddMoreCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddMoreCollectionCell.xib; path = ../../../../../../Desktop/iOS/LINK/LINK/View/XIB/AddMoreCollectionCell.xib; sourceTree = "<group>"; };
+		185EBFE728CD34E6007AE1B8 /* AddMoreCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddMoreCollectionCell.swift; path = ../../../../../Desktop/iOS/LINK/LINK/Controllers/CellControllers/Cells/AddMoreCollectionCell.swift; sourceTree = "<group>"; };
+		185EBFE928CD36B0007AE1B8 /* SocialMediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaList.swift; sourceTree = "<group>"; };
+		185EBFEA28D1533F007AE1B8 /* AllSocialsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSocialsPageController.swift; sourceTree = "<group>"; };
+		185EBFEC28D1542F007AE1B8 /* AllSocialsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSocialsCell.swift; sourceTree = "<group>"; };
+		188E276428AA2A6F0051CDD3 /* AuthStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryboard.storyboard; sourceTree = "<group>"; };
+		188E276728AA2B9E0051CDD3 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		18B86A6528AE3C5900A59F11 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		18B86A6928AFF90400A59F11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18B86A7428B6309E00A59F11 /* SocialMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaCell.swift; sourceTree = "<group>"; };
+		18B86A7628B630D200A59F11 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
+		18B86A7828B6311B00A59F11 /* SocialMediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialMediaCell.xib; sourceTree = "<group>"; };
+		18B86A7A28C96B0600A59F11 /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
+		18B86A8428C96D7A00A59F11 /* SocialMediaList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialMediaList.swift; path = ../../../../Desktop/iOS/LINK/LINK/SocialMediaList.swift; sourceTree = "<group>"; };
+		18B86A8628CBF91800A59F11 /* ScanCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeController.swift; sourceTree = "<group>"; };
+		18B86A8828CBF91B00A59F11 /* EditUsernameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameController.swift; sourceTree = "<group>"; };
+		18B86A8A28CBF91E00A59F11 /* ProfilePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageController.swift; sourceTree = "<group>"; };
+		18B86A8C28CBF96800A59F11 /* EditUsernameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameTableCell.swift; sourceTree = "<group>"; };
+		18B86A8E28CC058800A59F11 /* YourLinksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YourLinksController.swift; path = ../../../../../Desktop/iOS/LINK/LINK/Controllers/ViewControllers/YourLinksController.swift; sourceTree = "<group>"; };
+		18B86A9028CC059600A59F11 /* YourLinksTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YourLinksTableCell.swift; path = ../../../../../Desktop/iOS/LINK/LINK/Controllers/CellControllers/Cells/YourLinksTableCell.swift; sourceTree = "<group>"; };
+		18B86A9228CC059F00A59F11 /* yourLinksTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = yourLinksTableCell.xib; path = ../../../../../../Desktop/iOS/LINK/LINK/View/XIB/yourLinksTableCell.xib; sourceTree = "<group>"; };
+		EF61BCFC28ABA4AF0023EFB0 /* ProvidersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersController.swift; sourceTree = "<group>"; };
+		EFDD1CE028AA1D0D00AD44CD /* Meetsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDD1CE328AA1D0D00AD44CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFDD1CE528AA1D0D00AD44CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFDD1CEA28AA1D0D00AD44CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFDD1CED28AA1D0D00AD44CD /* Meetsy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meetsy.xcdatamodel; sourceTree = "<group>"; };
+		EFDD1CEF28AA1D1100AD44CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFDD1CF228AA1D1100AD44CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFDD1CF428AA1D1100AD44CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFDD1CF928AA1D1100AD44CD /* MeetsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDD1CFD28AA1D1100AD44CD /* MeetsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetsyTests.swift; sourceTree = "<group>"; };
+		EFDD1D0328AA1D1100AD44CD /* MeetsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDD1D0728AA1D1100AD44CD /* MeetsyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetsyUITests.swift; sourceTree = "<group>"; };
+		EFDD1D0928AA1D1100AD44CD /* MeetsyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetsyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFDD1D1628AA20C700AD44CD /* UDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFDD1CDD28AA1D0D00AD44CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF682C4A28B378B30030CB41 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD1CF628AA1D1100AD44CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD1D0028AA1D1100AD44CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185EBFE428CD2891007AE1B8 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				185EBFE028CD286D007AE1B8 /* Social+CoreDataClass.swift */,
+				185EBFE128CD286D007AE1B8 /* Social+CoreDataProperties.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		188E276228AA2A470051CDD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B86A6B28AFF92700A59F11 /* XIBs */,
+				18B86A6428AE3C3500A59F11 /* Custom Appearances */,
+				188E276328AA2A570051CDD3 /* Auth */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		188E276328AA2A570051CDD3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				188E276428AA2A6F0051CDD3 /* AuthStoryboard.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		188E276628AA2B800051CDD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B86A6928AFF90400A59F11 /* HomeViewController.swift */,
+				188E276728AA2B9E0051CDD3 /* AuthController.swift */,
+				18B86A8A28CBF91E00A59F11 /* ProfilePageController.swift */,
+				18B86A8628CBF91800A59F11 /* ScanCodeController.swift */,
+				18B86A8828CBF91B00A59F11 /* EditUsernameController.swift */,
+				EF61BCFC28ABA4AF0023EFB0 /* ProvidersController.swift */,
+				18B86A7428B6309E00A59F11 /* SocialMediaCell.swift */,
+				18B86A8C28CBF96800A59F11 /* EditUsernameTableCell.swift */,
+				18B86A8E28CC058800A59F11 /* YourLinksController.swift */,
+				18B86A9028CC059600A59F11 /* YourLinksTableCell.swift */,
+				185EBFE728CD34E6007AE1B8 /* AddMoreCollectionCell.swift */,
+				185EBFEA28D1533F007AE1B8 /* AllSocialsPageController.swift */,
+				185EBFEC28D1542F007AE1B8 /* AllSocialsCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B86A6428AE3C3500A59F11 /* Custom Appearances */ = {
+			isa = PBXGroup;
+			children = (
+				18B86A6528AE3C5900A59F11 /* GradientButton.swift */,
+				18B86A7628B630D200A59F11 /* ProfilePictureView.swift */,
+			);
+			path = "Custom Appearances";
+			sourceTree = "<group>";
+		};
+		18B86A6B28AFF92700A59F11 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				18B86A9228CC059F00A59F11 /* yourLinksTableCell.xib */,
+				18B86A7828B6311B00A59F11 /* SocialMediaCell.xib */,
+				185EBFE528CD34D8007AE1B8 /* AddMoreCollectionCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		18B86A9828CD26F800A59F11 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				185EBFE428CD2891007AE1B8 /* Social */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		EFDD1CD728AA1D0D00AD44CD = {
+			isa = PBXGroup;
+			children = (
+				EFDD1CE228AA1D0D00AD44CD /* Meetsy */,
+				EFDD1CFC28AA1D1100AD44CD /* MeetsyTests */,
+				EFDD1D0628AA1D1100AD44CD /* MeetsyUITests */,
+				EFDD1CE128AA1D0D00AD44CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFDD1CE128AA1D0D00AD44CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD1CE028AA1D0D00AD44CD /* Meetsy.app */,
+				EFDD1CF928AA1D1100AD44CD /* MeetsyTests.xctest */,
+				EFDD1D0328AA1D1100AD44CD /* MeetsyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDD1CE228AA1D0D00AD44CD /* Meetsy */ = {
+			isa = PBXGroup;
+			children = (
+				188E276628AA2B800051CDD3 /* Controller */,
+				188E276228AA2A470051CDD3 /* View */,
+				EFDD1D1828AA220D00AD44CD /* Model */,
+				EFDD1CE328AA1D0D00AD44CD /* AppDelegate.swift */,
+				EFDD1CE528AA1D0D00AD44CD /* SceneDelegate.swift */,
+				EFDD1CE928AA1D0D00AD44CD /* Main.storyboard */,
+				EFDD1CEF28AA1D1100AD44CD /* Assets.xcassets */,
+				EFDD1CF128AA1D1100AD44CD /* LaunchScreen.storyboard */,
+				EFDD1CF428AA1D1100AD44CD /* Info.plist */,
+				EFDD1CEC28AA1D0D00AD44CD /* Meetsy.xcdatamodeld */,
+				18B86A7A28C96B0600A59F11 /* ProfilePage.storyboard */,
+				18B86A8428C96D7A00A59F11 /* SocialMediaList.swift */,
+			);
+			path = Meetsy;
+			sourceTree = "<group>";
+		};
+		EFDD1CFC28AA1D1100AD44CD /* MeetsyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD1CFD28AA1D1100AD44CD /* MeetsyTests.swift */,
+			);
+			path = MeetsyTests;
+			sourceTree = "<group>";
+		};
+		EFDD1D0628AA1D1100AD44CD /* MeetsyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD1D0728AA1D1100AD44CD /* MeetsyUITests.swift */,
+				EFDD1D0928AA1D1100AD44CD /* MeetsyUITestsLaunchTests.swift */,
+			);
+			path = MeetsyUITests;
+			sourceTree = "<group>";
+		};
+		EFDD1D1828AA220D00AD44CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185EBFE928CD36B0007AE1B8 /* SocialMediaList.swift */,
+				18B86A9828CD26F800A59F11 /* CoreData */,
+				EFDD1D1928AA221700AD44CD /* Managers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFDD1D1928AA221700AD44CD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD1D1628AA20C700AD44CD /* UDM.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFDD1CDF28AA1D0D00AD44CD /* Meetsy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDD1D0D28AA1D1100AD44CD /* Build configuration list for PBXNativeTarget "Meetsy" */;
+			buildPhases = (
+				EFDD1CDC28AA1D0D00AD44CD /* Sources */,
+				EFDD1CDD28AA1D0D00AD44CD /* Frameworks */,
+				EFDD1CDE28AA1D0D00AD44CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meetsy;
+			packageProductDependencies = (
+				EF682C4928B378B30030CB41 /* GoogleSignIn */,
+			);
+			productName = Meetsy;
+			productReference = EFDD1CE028AA1D0D00AD44CD /* Meetsy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFDD1CF828AA1D1100AD44CD /* MeetsyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDD1D1028AA1D1100AD44CD /* Build configuration list for PBXNativeTarget "MeetsyTests" */;
+			buildPhases = (
+				EFDD1CF528AA1D1100AD44CD /* Sources */,
+				EFDD1CF628AA1D1100AD44CD /* Frameworks */,
+				EFDD1CF728AA1D1100AD44CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDD1CFB28AA1D1100AD44CD /* PBXTargetDependency */,
+			);
+			name = MeetsyTests;
+			productName = MeetsyTests;
+			productReference = EFDD1CF928AA1D1100AD44CD /* MeetsyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFDD1D0228AA1D1100AD44CD /* MeetsyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDD1D1328AA1D1100AD44CD /* Build configuration list for PBXNativeTarget "MeetsyUITests" */;
+			buildPhases = (
+				EFDD1CFF28AA1D1100AD44CD /* Sources */,
+				EFDD1D0028AA1D1100AD44CD /* Frameworks */,
+				EFDD1D0128AA1D1100AD44CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDD1D0528AA1D1100AD44CD /* PBXTargetDependency */,
+			);
+			name = MeetsyUITests;
+			productName = MeetsyUITests;
+			productReference = EFDD1D0328AA1D1100AD44CD /* MeetsyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFDD1CD828AA1D0D00AD44CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EFDD1CDF28AA1D0D00AD44CD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EFDD1CF828AA1D1100AD44CD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = EFDD1CDF28AA1D0D00AD44CD;
+					};
+					EFDD1D0228AA1D1100AD44CD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = EFDD1CDF28AA1D0D00AD44CD;
+					};
+				};
+			};
+			buildConfigurationList = EFDD1CDB28AA1D0D00AD44CD /* Build configuration list for PBXProject "Meetsy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFDD1CD728AA1D0D00AD44CD;
+			packageReferences = (
+				EF682C4828B378B30030CB41 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = EFDD1CE128AA1D0D00AD44CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFDD1CDF28AA1D0D00AD44CD /* Meetsy */,
+				EFDD1CF828AA1D1100AD44CD /* MeetsyTests */,
+				EFDD1D0228AA1D1100AD44CD /* MeetsyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFDD1CDE28AA1D0D00AD44CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD1CF328AA1D1100AD44CD /* LaunchScreen.storyboard in Resources */,
+				18B86A7B28C96B0600A59F11 /* ProfilePage.storyboard in Resources */,
+				185EBFE628CD34D8007AE1B8 /* AddMoreCollectionCell.xib in Resources */,
+				EFDD1CF028AA1D1100AD44CD /* Assets.xcassets in Resources */,
+				EFDD1CEB28AA1D0D00AD44CD /* Main.storyboard in Resources */,
+				18B86A9328CC059F00A59F11 /* yourLinksTableCell.xib in Resources */,
+				188E276528AA2A6F0051CDD3 /* AuthStoryboard.storyboard in Resources */,
+				18B86A7928B6311B00A59F11 /* SocialMediaCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD1CF728AA1D1100AD44CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD1D0128AA1D1100AD44CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFDD1CDC28AA1D0D00AD44CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B86A8928CBF91B00A59F11 /* EditUsernameController.swift in Sources */,
+				EFDD1D1728AA20C700AD44CD /* UDM.swift in Sources */,
+				185EBFE828CD34E6007AE1B8 /* AddMoreCollectionCell.swift in Sources */,
+				18B86A6628AE3C5900A59F11 /* GradientButton.swift in Sources */,
+				18B86A9128CC059600A59F11 /* YourLinksTableCell.swift in Sources */,
+				18B86A8D28CBF96800A59F11 /* EditUsernameTableCell.swift in Sources */,
+				188E276828AA2B9E0051CDD3 /* AuthController.swift in Sources */,
+				185EBFE228CD286D007AE1B8 /* Social+CoreDataClass.swift in Sources */,
+				18B86A7528B6309E00A59F11 /* SocialMediaCell.swift in Sources */,
+				18B86A8528C96D7A00A59F11 /* SocialMediaList.swift in Sources */,
+				185EBFEB28D1533F007AE1B8 /* AllSocialsPageController.swift in Sources */,
+				EF61BCFD28ABA4AF0023EFB0 /* ProvidersController.swift in Sources */,
+				18B86A8F28CC058800A59F11 /* YourLinksController.swift in Sources */,
+				18B86A8728CBF91800A59F11 /* ScanCodeController.swift in Sources */,
+				185EBFE328CD286D007AE1B8 /* Social+CoreDataProperties.swift in Sources */,
+				18B86A7728B630D200A59F11 /* ProfilePictureView.swift in Sources */,
+				18B86A6A28AFF90400A59F11 /* HomeViewController.swift in Sources */,
+				18B86A8B28CBF91E00A59F11 /* ProfilePageController.swift in Sources */,
+				EFDD1CE428AA1D0D00AD44CD /* AppDelegate.swift in Sources */,
+				EFDD1CEE28AA1D0D00AD44CD /* Meetsy.xcdatamodeld in Sources */,
+				185EBFED28D1542F007AE1B8 /* AllSocialsCell.swift in Sources */,
+				EFDD1CE628AA1D0D00AD44CD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD1CF528AA1D1100AD44CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD1CFE28AA1D1100AD44CD /* MeetsyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD1CFF28AA1D1100AD44CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD1D0828AA1D1100AD44CD /* MeetsyUITests.swift in Sources */,
+				EFDD1D0A28AA1D1100AD44CD /* MeetsyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFDD1CFB28AA1D1100AD44CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDD1CDF28AA1D0D00AD44CD /* Meetsy */;
+			targetProxy = EFDD1CFA28AA1D1100AD44CD /* PBXContainerItemProxy */;
+		};
+		EFDD1D0528AA1D1100AD44CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDD1CDF28AA1D0D00AD44CD /* Meetsy */;
+			targetProxy = EFDD1D0428AA1D1100AD44CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFDD1CE928AA1D0D00AD44CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDD1CEA28AA1D0D00AD44CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFDD1CF128AA1D1100AD44CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDD1CF228AA1D1100AD44CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFDD1D0B28AA1D1100AD44CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFDD1D0C28AA1D1100AD44CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFDD1D0E28AA1D1100AD44CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5RXWWCBLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meetsy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Meetsy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EFDD1D0F28AA1D1100AD44CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5RXWWCBLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meetsy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Meetsy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EFDD1D1128AA1D1100AD44CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5RXWWCBLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MeetsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetsy.app/Meetsy";
+			};
+			name = Debug;
+		};
+		EFDD1D1228AA1D1100AD44CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5RXWWCBLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MeetsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetsy.app/Meetsy";
+			};
+			name = Release;
+		};
+		EFDD1D1428AA1D1100AD44CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5RXWWCBLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MeetsyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meetsy;
+			};
+			name = Debug;
+		};
+		EFDD1D1528AA1D1100AD44CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5RXWWCBLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MeetsyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meetsy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFDD1CDB28AA1D0D00AD44CD /* Build configuration list for PBXProject "Meetsy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD1D0B28AA1D1100AD44CD /* Debug */,
+				EFDD1D0C28AA1D1100AD44CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDD1D0D28AA1D1100AD44CD /* Build configuration list for PBXNativeTarget "Meetsy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD1D0E28AA1D1100AD44CD /* Debug */,
+				EFDD1D0F28AA1D1100AD44CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDD1D1028AA1D1100AD44CD /* Build configuration list for PBXNativeTarget "MeetsyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD1D1128AA1D1100AD44CD /* Debug */,
+				EFDD1D1228AA1D1100AD44CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDD1D1328AA1D1100AD44CD /* Build configuration list for PBXNativeTarget "MeetsyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD1D1428AA1D1100AD44CD /* Debug */,
+				EFDD1D1528AA1D1100AD44CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF682C4828B378B30030CB41 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF682C4928B378B30030CB41 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF682C4828B378B30030CB41 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EFDD1CEC28AA1D0D00AD44CD /* Meetsy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFDD1CED28AA1D0D00AD44CD /* Meetsy.xcdatamodel */,
+			);
+			currentVersion = EFDD1CED28AA1D0D00AD44CD /* Meetsy.xcdatamodel */;
+			path = Meetsy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EFDD1CD828AA1D0D00AD44CD /* Project object */;
+}
