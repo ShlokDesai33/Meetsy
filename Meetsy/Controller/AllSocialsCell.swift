@@ -13,6 +13,8 @@ class AllSocialsCell: UITableViewCell {
     
     @IBOutlet weak var usernameTF: UITextField!
     
+    var platformName: String!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

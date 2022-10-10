@@ -17,6 +17,8 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var settingButtonConstraint: NSLayoutConstraint!
     @IBOutlet weak var displayName: UILabel!
     @IBOutlet weak var numberOfLinks: UILabel!
+    @IBOutlet weak var linkUpButton: UIButton!
+    
     var segueCurrentUsername: String!
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var socialsDataSource: [Social]! = []
@@ -50,32 +52,37 @@ class HomeViewController: UIViewController{
         //Setting the Y position for Leetsy logo
         if UIDevice.current.hasNotch {
             meetsyLogoConstraint.constant = 20
-            settingButtonConstraint.constant = 20
+            //settingButtonConstraint.constant = 20
         } else {
             meetsyLogoConstraint.constant = 10
-            settingButtonConstraint.constant = 10
+            //settingButtonConstraint.constant = 10
         }
 
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
+     fetchCoreData()
+        
         let fetchRequest : NSFetchRequest<Social> = Social.fetchRequest()
         fetchRequest.returnsObjectsAsFaults = false
+        
         do{
-            let result = try context.fetch(fetchRequest)
-            
-            for social in result{
-                socialsDataSource.append(social)
-                collectionView.reloadData()
+        let result = try context.fetch(fetchRequest)
+        for social in result{
+           // SocialMedias.addedSocials.append(social.platform!)
+            if(SocialMedias.list.contains(social.platform!)){
+                let indexToRemove = SocialMedias.list.firstIndex(of: social.platform!)
+                SocialMedias.list.remove(at: indexToRemove!)
+                SocialMedias.addedSocials.append(social.platform!)
             }
-          
-           print("\n \(result)")
-            
         }
-        catch{
-            print("couldnt fetch")
+        
         }
+    catch{
+        print("couldnt fetch")
+    }
+        
     }
     
     //Initalise the viewcontroller
@@ -84,7 +91,7 @@ class HomeViewController: UIViewController{
         
         //Set user details on the Home page
         displayName.text = UDM.shared.getName()
-        numberOfLinks.text = String("\(UDM.shared.getNoLinks()) Links")
+       // numberOfLinks.text = String("\(UDM.shared.getNoLinks()) Links")
         
         
         
@@ -115,17 +122,23 @@ class HomeViewController: UIViewController{
         //Dummy code no use rn.
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
         profilePicture.clipsToBounds = true
+        linkUpButton.layer.cornerRadius = linkUpButton.frame.height / 2
         
         // Do any additional setup after loading the view.
+        let gradient = CAGradientLayer()
+        gradient.frame =  CGRect(origin: .zero, size: linkUpButton.frame.size)
+        gradient.colors = [UIColor.blue.cgColor, UIColor.green.cgColor]
+        let shape = CAShapeLayer()
+        shape.lineWidth = 2
+        shape.path = UIBezierPath(roundedRect: linkUpButton.bounds, cornerRadius: linkUpButton.frame.height / 2).cgPath
+        shape.strokeColor = UIColor.black.cgColor
+        shape.fillColor = UIColor.clear.cgColor
+        shape.strokeStart = .zero
+        shape.strokeEnd = CGFloat(1)
+        gradient.mask = shape
         
-       
-        
-
-
-   
-        
-        
-        
+        linkUpButton.layer.addSublayer(gradient)
+    
     }
 
 }
@@ -286,7 +299,9 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     
     @objc func loadList(notification: NSNotification){
         //load data here
+        fetchCoreData()
         self.collectionView.reloadData()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -299,6 +314,29 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
          }
      }
     
+    
+    func fetchCoreData(){
+        let fetchRequest : NSFetchRequest<Social> = Social.fetchRequest()
+        fetchRequest.returnsObjectsAsFaults = false
+        
+        socialsDataSource.removeAll()
+        
+        do{
+            let result = try context.fetch(fetchRequest)
+            for social in result{
+                socialsDataSource.append(social)
+                collectionView.reloadData()
+            }
+          
+           print("\n \(result)")
+            
+        }
+        catch{
+            print("couldnt fetch")
+        }
+        
+        
+    }
 
 
 }

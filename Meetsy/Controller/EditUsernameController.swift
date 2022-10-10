@@ -67,14 +67,30 @@ class EditUsernameController: UIViewController{
         catch{
             
         }
-        
-        
-        
-        
+ 
             //Posts a notification to call Collection View reload data upon dismissing screen
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
 
         
+        dismiss(animated: true)
+    }
+    @IBAction func removeSocial(_ sender: Any) {
+        
+        context.delete(SocialsDataSource[index])
+        
+        SocialMedias.list.append(SocialsDataSource[index].platform!)
+        
+        let indexToRemove = SocialMedias.addedSocials.firstIndex(of: SocialsDataSource[index].platform!)
+        
+        let removedItem = SocialMedias.addedSocials.remove(at: indexToRemove!)
+        
+        do{
+            try context.save()
+            dismiss(animated: true)
+        }catch{
+            
+        }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
         dismiss(animated: true)
     }
     

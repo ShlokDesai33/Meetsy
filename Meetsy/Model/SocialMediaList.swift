@@ -11,10 +11,13 @@ import UIKit
 
 struct SocialMedias{
 
-    static let list : [[String: Any]] = [
-        ["name": "Instagram", "image" : UIImage(named: "InstagramLogo")!],
-        ["name": "Snapchat", "image": UIImage(named: "SnapchatLogo")! ]
-    ]
+//    static let list : [[String: Any]] = [
+//        ["name": "Instagram", "image" : UIImage(named: "Instagram")!],
+//        ["name": "Snapchat", "image": UIImage(named: "Snapchat")! ]
+//    ]
+    
+    static var list : [String] = ["Instagram", "Snapchat"]
+    static var addedSocials : [String] = []
     
 
 }

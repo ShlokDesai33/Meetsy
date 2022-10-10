@@ -24,8 +24,7 @@ class AllSocialsPageController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllSocialsCell") as! AllSocialsCell
         
         cell.logo.image = UIImage(named: SocialMedias.list[indexPath.row])
-        
-        cell.logo.tag = indexPath.row
+        cell.platformName = SocialMedias.list[indexPath.row]
         
         return cell
         
@@ -35,6 +34,9 @@ class AllSocialsPageController: UIViewController, UITableViewDataSource {
         return 1
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +44,7 @@ class AllSocialsPageController: UIViewController, UITableViewDataSource {
         tableView.rowHeight = 70
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        // Do any additional setup after loading the view.
+                
     }
     
     @IBAction func addUsernames(_ sender: Any) {
@@ -55,7 +57,13 @@ class AllSocialsPageController: UIViewController, UITableViewDataSource {
                 
                 let newItem = Social(context: context)
                 newItem.username = cell.usernameTF.text
-                newItem.platform = SocialMedias.list[cell.logo.tag]
+                newItem.platform = cell.platformName
+                
+                SocialMedias.addedSocials.append(newItem.platform!)
+                
+                let indexToRemove = SocialMedias.list.firstIndex(of: newItem.platform!)
+                
+                let removedItem = SocialMedias.list.remove(at: indexToRemove!)
                 
                 do{
                     try context.save()

@@ -7,28 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185AE73928F25C4F00A0A414 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AE73828F25C4F00A0A414 /* GradientButton.swift */; };
+		185AE73D28F4A24E00A0A414 /* SocialMediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AE73C28F4A24E00A0A414 /* SocialMediaList.swift */; };
+		185AE73F28F4A2B500A0A414 /* AddMoreCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185AE73E28F4A2B500A0A414 /* AddMoreCollectionCell.xib */; };
+		185AE74128F4A30F00A0A414 /* AddMoreCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AE74028F4A30F00A0A414 /* AddMoreCollectionCell.swift */; };
 		185EBFE228CD286D007AE1B8 /* Social+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFE028CD286D007AE1B8 /* Social+CoreDataClass.swift */; };
 		185EBFE328CD286D007AE1B8 /* Social+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFE128CD286D007AE1B8 /* Social+CoreDataProperties.swift */; };
-		185EBFE628CD34D8007AE1B8 /* AddMoreCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185EBFE528CD34D8007AE1B8 /* AddMoreCollectionCell.xib */; };
-		185EBFE828CD34E6007AE1B8 /* AddMoreCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFE728CD34E6007AE1B8 /* AddMoreCollectionCell.swift */; };
 		185EBFEB28D1533F007AE1B8 /* AllSocialsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFEA28D1533F007AE1B8 /* AllSocialsPageController.swift */; };
 		185EBFED28D1542F007AE1B8 /* AllSocialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EBFEC28D1542F007AE1B8 /* AllSocialsCell.swift */; };
 		188E276528AA2A6F0051CDD3 /* AuthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188E276428AA2A6F0051CDD3 /* AuthStoryboard.storyboard */; };
 		188E276828AA2B9E0051CDD3 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E276728AA2B9E0051CDD3 /* AuthController.swift */; };
-		18B86A6628AE3C5900A59F11 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A6528AE3C5900A59F11 /* GradientButton.swift */; };
 		18B86A6A28AFF90400A59F11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A6928AFF90400A59F11 /* HomeViewController.swift */; };
 		18B86A7528B6309E00A59F11 /* SocialMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A7428B6309E00A59F11 /* SocialMediaCell.swift */; };
 		18B86A7728B630D200A59F11 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A7628B630D200A59F11 /* ProfilePictureView.swift */; };
 		18B86A7928B6311B00A59F11 /* SocialMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B86A7828B6311B00A59F11 /* SocialMediaCell.xib */; };
 		18B86A7B28C96B0600A59F11 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B86A7A28C96B0600A59F11 /* ProfilePage.storyboard */; };
-		18B86A8528C96D7A00A59F11 /* SocialMediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8428C96D7A00A59F11 /* SocialMediaList.swift */; };
 		18B86A8728CBF91800A59F11 /* ScanCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8628CBF91800A59F11 /* ScanCodeController.swift */; };
 		18B86A8928CBF91B00A59F11 /* EditUsernameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8828CBF91B00A59F11 /* EditUsernameController.swift */; };
 		18B86A8B28CBF91E00A59F11 /* ProfilePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8A28CBF91E00A59F11 /* ProfilePageController.swift */; };
 		18B86A8D28CBF96800A59F11 /* EditUsernameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8C28CBF96800A59F11 /* EditUsernameTableCell.swift */; };
-		18B86A8F28CC058800A59F11 /* YourLinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A8E28CC058800A59F11 /* YourLinksController.swift */; };
-		18B86A9128CC059600A59F11 /* YourLinksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B86A9028CC059600A59F11 /* YourLinksTableCell.swift */; };
-		18B86A9328CC059F00A59F11 /* yourLinksTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B86A9228CC059F00A59F11 /* yourLinksTableCell.xib */; };
 		EF61BCFD28ABA4AF0023EFB0 /* ProvidersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61BCFC28ABA4AF0023EFB0 /* ProvidersController.swift */; };
 		EF682C4A28B378B30030CB41 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EF682C4928B378B30030CB41 /* GoogleSignIn */; };
 		EFDD1CE428AA1D0D00AD44CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD1CE328AA1D0D00AD44CD /* AppDelegate.swift */; };
@@ -61,29 +58,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185AE73828F25C4F00A0A414 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		185AE73C28F4A24E00A0A414 /* SocialMediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaList.swift; sourceTree = "<group>"; };
+		185AE73E28F4A2B500A0A414 /* AddMoreCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMoreCollectionCell.xib; sourceTree = "<group>"; };
+		185AE74028F4A30F00A0A414 /* AddMoreCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreCollectionCell.swift; sourceTree = "<group>"; };
 		185EBFE028CD286D007AE1B8 /* Social+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Social+CoreDataClass.swift"; sourceTree = "<group>"; };
 		185EBFE128CD286D007AE1B8 /* Social+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Social+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		185EBFE528CD34D8007AE1B8 /* AddMoreCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddMoreCollectionCell.xib; path = ../../../../../../Desktop/iOS/LINK/LINK/View/XIB/AddMoreCollectionCell.xib; sourceTree = "<group>"; };
-		185EBFE728CD34E6007AE1B8 /* AddMoreCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddMoreCollectionCell.swift; path = ../../../../../Desktop/iOS/LINK/LINK/Controllers/CellControllers/Cells/AddMoreCollectionCell.swift; sourceTree = "<group>"; };
-		185EBFE928CD36B0007AE1B8 /* SocialMediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaList.swift; sourceTree = "<group>"; };
 		185EBFEA28D1533F007AE1B8 /* AllSocialsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSocialsPageController.swift; sourceTree = "<group>"; };
 		185EBFEC28D1542F007AE1B8 /* AllSocialsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSocialsCell.swift; sourceTree = "<group>"; };
 		188E276428AA2A6F0051CDD3 /* AuthStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryboard.storyboard; sourceTree = "<group>"; };
 		188E276728AA2B9E0051CDD3 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
-		18B86A6528AE3C5900A59F11 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		18B86A6928AFF90400A59F11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18B86A7428B6309E00A59F11 /* SocialMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaCell.swift; sourceTree = "<group>"; };
 		18B86A7628B630D200A59F11 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
 		18B86A7828B6311B00A59F11 /* SocialMediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialMediaCell.xib; sourceTree = "<group>"; };
 		18B86A7A28C96B0600A59F11 /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
-		18B86A8428C96D7A00A59F11 /* SocialMediaList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialMediaList.swift; path = ../../../../Desktop/iOS/LINK/LINK/SocialMediaList.swift; sourceTree = "<group>"; };
 		18B86A8628CBF91800A59F11 /* ScanCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeController.swift; sourceTree = "<group>"; };
 		18B86A8828CBF91B00A59F11 /* EditUsernameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameController.swift; sourceTree = "<group>"; };
 		18B86A8A28CBF91E00A59F11 /* ProfilePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageController.swift; sourceTree = "<group>"; };
 		18B86A8C28CBF96800A59F11 /* EditUsernameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameTableCell.swift; sourceTree = "<group>"; };
-		18B86A8E28CC058800A59F11 /* YourLinksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YourLinksController.swift; path = ../../../../../Desktop/iOS/LINK/LINK/Controllers/ViewControllers/YourLinksController.swift; sourceTree = "<group>"; };
-		18B86A9028CC059600A59F11 /* YourLinksTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YourLinksTableCell.swift; path = ../../../../../Desktop/iOS/LINK/LINK/Controllers/CellControllers/Cells/YourLinksTableCell.swift; sourceTree = "<group>"; };
-		18B86A9228CC059F00A59F11 /* yourLinksTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = yourLinksTableCell.xib; path = ../../../../../../Desktop/iOS/LINK/LINK/View/XIB/yourLinksTableCell.xib; sourceTree = "<group>"; };
 		EF61BCFC28ABA4AF0023EFB0 /* ProvidersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersController.swift; sourceTree = "<group>"; };
 		EFDD1CE028AA1D0D00AD44CD /* Meetsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD1CE328AA1D0D00AD44CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,11 +158,9 @@
 				EF61BCFC28ABA4AF0023EFB0 /* ProvidersController.swift */,
 				18B86A7428B6309E00A59F11 /* SocialMediaCell.swift */,
 				18B86A8C28CBF96800A59F11 /* EditUsernameTableCell.swift */,
-				18B86A8E28CC058800A59F11 /* YourLinksController.swift */,
-				18B86A9028CC059600A59F11 /* YourLinksTableCell.swift */,
-				185EBFE728CD34E6007AE1B8 /* AddMoreCollectionCell.swift */,
 				185EBFEA28D1533F007AE1B8 /* AllSocialsPageController.swift */,
 				185EBFEC28D1542F007AE1B8 /* AllSocialsCell.swift */,
+				185AE74028F4A30F00A0A414 /* AddMoreCollectionCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,8 +168,8 @@
 		18B86A6428AE3C3500A59F11 /* Custom Appearances */ = {
 			isa = PBXGroup;
 			children = (
-				18B86A6528AE3C5900A59F11 /* GradientButton.swift */,
 				18B86A7628B630D200A59F11 /* ProfilePictureView.swift */,
+				185AE73828F25C4F00A0A414 /* GradientButton.swift */,
 			);
 			path = "Custom Appearances";
 			sourceTree = "<group>";
@@ -186,9 +177,8 @@
 		18B86A6B28AFF92700A59F11 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				18B86A9228CC059F00A59F11 /* yourLinksTableCell.xib */,
 				18B86A7828B6311B00A59F11 /* SocialMediaCell.xib */,
-				185EBFE528CD34D8007AE1B8 /* AddMoreCollectionCell.xib */,
+				185AE73E28F4A2B500A0A414 /* AddMoreCollectionCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -235,7 +225,6 @@
 				EFDD1CF428AA1D1100AD44CD /* Info.plist */,
 				EFDD1CEC28AA1D0D00AD44CD /* Meetsy.xcdatamodeld */,
 				18B86A7A28C96B0600A59F11 /* ProfilePage.storyboard */,
-				18B86A8428C96D7A00A59F11 /* SocialMediaList.swift */,
 			);
 			path = Meetsy;
 			sourceTree = "<group>";
@@ -260,9 +249,9 @@
 		EFDD1D1828AA220D00AD44CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				185EBFE928CD36B0007AE1B8 /* SocialMediaList.swift */,
 				18B86A9828CD26F800A59F11 /* CoreData */,
 				EFDD1D1928AA221700AD44CD /* Managers */,
+				185AE73C28F4A24E00A0A414 /* SocialMediaList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -387,10 +376,9 @@
 			files = (
 				EFDD1CF328AA1D1100AD44CD /* LaunchScreen.storyboard in Resources */,
 				18B86A7B28C96B0600A59F11 /* ProfilePage.storyboard in Resources */,
-				185EBFE628CD34D8007AE1B8 /* AddMoreCollectionCell.xib in Resources */,
+				185AE73F28F4A2B500A0A414 /* AddMoreCollectionCell.xib in Resources */,
 				EFDD1CF028AA1D1100AD44CD /* Assets.xcassets in Resources */,
 				EFDD1CEB28AA1D0D00AD44CD /* Main.storyboard in Resources */,
-				18B86A9328CC059F00A59F11 /* yourLinksTableCell.xib in Resources */,
 				188E276528AA2A6F0051CDD3 /* AuthStoryboard.storyboard in Resources */,
 				18B86A7928B6311B00A59F11 /* SocialMediaCell.xib in Resources */,
 			);
@@ -419,21 +407,19 @@
 			files = (
 				18B86A8928CBF91B00A59F11 /* EditUsernameController.swift in Sources */,
 				EFDD1D1728AA20C700AD44CD /* UDM.swift in Sources */,
-				185EBFE828CD34E6007AE1B8 /* AddMoreCollectionCell.swift in Sources */,
-				18B86A6628AE3C5900A59F11 /* GradientButton.swift in Sources */,
-				18B86A9128CC059600A59F11 /* YourLinksTableCell.swift in Sources */,
 				18B86A8D28CBF96800A59F11 /* EditUsernameTableCell.swift in Sources */,
 				188E276828AA2B9E0051CDD3 /* AuthController.swift in Sources */,
+				185AE73D28F4A24E00A0A414 /* SocialMediaList.swift in Sources */,
+				185AE73928F25C4F00A0A414 /* GradientButton.swift in Sources */,
 				185EBFE228CD286D007AE1B8 /* Social+CoreDataClass.swift in Sources */,
 				18B86A7528B6309E00A59F11 /* SocialMediaCell.swift in Sources */,
-				18B86A8528C96D7A00A59F11 /* SocialMediaList.swift in Sources */,
 				185EBFEB28D1533F007AE1B8 /* AllSocialsPageController.swift in Sources */,
 				EF61BCFD28ABA4AF0023EFB0 /* ProvidersController.swift in Sources */,
-				18B86A8F28CC058800A59F11 /* YourLinksController.swift in Sources */,
 				18B86A8728CBF91800A59F11 /* ScanCodeController.swift in Sources */,
 				185EBFE328CD286D007AE1B8 /* Social+CoreDataProperties.swift in Sources */,
 				18B86A7728B630D200A59F11 /* ProfilePictureView.swift in Sources */,
 				18B86A6A28AFF90400A59F11 /* HomeViewController.swift in Sources */,
+				185AE74128F4A30F00A0A414 /* AddMoreCollectionCell.swift in Sources */,
 				18B86A8B28CBF91E00A59F11 /* ProfilePageController.swift in Sources */,
 				EFDD1CE428AA1D0D00AD44CD /* AppDelegate.swift in Sources */,
 				EFDD1CEE28AA1D0D00AD44CD /* Meetsy.xcdatamodeld in Sources */,
