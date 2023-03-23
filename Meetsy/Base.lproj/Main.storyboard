@@ -26,15 +26,15 @@
                                         <rect key="frame" x="33" y="8" width="309" height="79"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-GD-DhW">
-                                                <rect key="frame" x="125" y="25.5" width="185.5" height="28"/>
+                                                <rect key="frame" x="125" y="25" width="185.5" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh3-QG-Qq1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="29"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Robert Smith">
                                                                 <attributes>
-                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="24" name="Poppins-Regular"/>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                                    <font key="NSFont" metaFont="system" size="24"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
@@ -159,8 +159,8 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Meetsy">
                                                         <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="19" name="Poppins-Regular"/>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" metaFont="system" size="19"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
